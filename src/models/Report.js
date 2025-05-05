@@ -8,9 +8,9 @@ const ReportSchema = new mongoose.Schema({
         seo: Number,
         bestPractices: Number,
         webVitals: {
-            lcp: Number,
-            fid: Number,
-            cls: Number
+            lcp: String,
+            fid: String,
+            cls: String
         }
     },
     jsonPath: String,

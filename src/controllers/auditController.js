@@ -35,7 +35,7 @@ exports.generateAudit = async (req, res) => {
             seo: reportJson.categories.seo.score * 100,
             bestPractices: reportJson.categories['best-practices'].score * 100,
             webVitals: {
-                lcp: reportJson.audits['largest-contentful-paint'].displayedSize,
+                lcp: reportJson.audits['largest-contentful-paint'].displayValue,
                 fid: reportJson.audits['max-potential-fid'].displayValue,
                 cls: reportJson.audits['cumulative-layout-shift'].displayValue
             }
