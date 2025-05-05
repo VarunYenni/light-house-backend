@@ -30,7 +30,12 @@ This Node.js backend allows users to audit websites using Google's Lighthouse to
     "performance": 94,
     "accessibility": 100,
     "seo": 92,
-    "bestPractices": 95
+    "bestPractices": 95,
+    "webVitals": {
+      "lcp": 1.2,
+      "fid": 0.1,
+      "cls": 0.05
+    }
   },
   "reportId": "661a83b5c93a0f1e243b89e7"
 }

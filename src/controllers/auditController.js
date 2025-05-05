@@ -34,6 +34,11 @@ exports.generateAudit = async (req, res) => {
             accessibility: reportJson.categories.accessibility.score * 100,
             seo: reportJson.categories.seo.score * 100,
             bestPractices: reportJson.categories['best-practices'].score * 100,
+            webVitals: {
+                lcp: reportJson.audits['largest-contentful-paint'].displayedSize,
+                fid: reportJson.audits['max-potential-fid'].displayValue,
+                cls: reportJson.audits['cumulative-layout-shift'].displayValue
+            }
         };
 
         const timestamp = Date.now();
